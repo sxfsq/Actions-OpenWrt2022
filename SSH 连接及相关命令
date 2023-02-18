@@ -1,3 +1,25 @@
 复制 SSH 连接命令粘贴到终端内执行，或者复制链接在浏览器中打开使用网页终端。（网页终端可能会遇到黑屏的情况，按 Ctrl+C 即可）
 cd openwrt && make menuconfig
 完成后按Ctrl+D组合键或执行exit命令退出，后续编译工作将自动进行。
+
+
+
+2.配置功能
+make menuconfig
+# 这一步执行完就会在openwrt根目录下生成一个.config文件;里面包含了所有的配置信息;有好几千行
+# 正常来说直接将这个文件放到云编译环境就可以编译了;但是不推荐这么做;因为里面包含了很多默认配置;
+# 我们需要的是差异化的那部分内容;所以需要将那部分提取出来;就是改了哪些默认设置;新增了哪些设置
+
+# 3.生成差异配置文件;执行如下命令
+scripts/diffconfig.sh &gt;mydiffconfig
+# 执行后提取的差异配置信息保存在openwrt根目录下的mydiffconfig中
+（或执行命令
+./scripts/diffconfig.sh > my.config
+再执行
+vi my.config
+将 my.config里面的内容复制出来保存在.config文件中）
+
+
+把上面生成的mydiffconfig文件内容直接替换到对应的.config文件即可执行编译
+
+
