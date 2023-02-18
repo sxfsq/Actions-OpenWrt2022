@@ -18,4 +18,4 @@ src-git diskman https://github.com/lisaac/luci-app-diskman.git
 #src-git shidahuilang https://github.com/shidahuilang/openwrt-package
 src-git wifidog https://github.com/wifidog/wifidog-gateway
 #src-git alist https://github.com/alist-org/alist
-src-git alist https://github.com/sbwml/luci-app-alist
+#src-git alist https://github.com/sbwml/luci-app-alist
