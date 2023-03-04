@@ -15,7 +15,6 @@ src-git diskman https://github.com/lisaac/luci-app-diskman.git
 #src-git kenzok8 https://github.com/kenzok8/openwrt-packages.git
 #src-git kenzok8 https://github.com/kenzok8/small-package
 #src-git brook https://github.com/xiaorouji/openwrt-passwall    #不可用，打开此会导致编译超时
-#src-git passwall https://github.com/xiaorouji/openwrt-passwall
 src-git passwall https://github.com/Never2333/openwrt-luci-app-passwall
 #src-git passwall https://github.com/xun188/luci-app-passwall
 src-git wifidog https://github.com/wifidog/wifidog-gateway
