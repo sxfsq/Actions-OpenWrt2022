@@ -16,6 +16,9 @@ src-git diskman https://github.com/lisaac/luci-app-diskman.git
 #src-git kenzok8 https://github.com/kenzok8/small-package
 #src-git brook https://github.com/xiaorouji/openwrt-passwall    #不可用，打开此会导致编译超时
 src-git wifidog https://github.com/wifidog/wifidog-gateway
-src-git shidahuilang https://github.com/shidahuilang/openwrt-package
+#src-git poweroff https://github.com/VPN-V2Ray/luci-app-poweroff
+#src-git poweroff https://github.com/esirplayground/luci-app-poweroff
+src-git poweroffdevice https://github.com/sirpdboy/luci-app-poweroffdevice
+#src-git shidahuilang https://github.com/shidahuilang/openwrt-package
 #src-git alist https://github.com/alist-org/alist
 #src-git alist https://github.com/sbwml/luci-app-alist
